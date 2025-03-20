@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color: rgb(97, 104, 117);
+    width: 100%;
+    height: 100vh;
+}
+
+.chat-container{
+    width: 100%;
+    height: 80%;
+    background-color: rgb(27, 30, 36);
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    gap: 20px;
+    padding: 20px;
+    overflow: auto;
+}
+
+.user-chat-box {
+    width: 60%;
+    left: 40%;
+    position: relative;
+}
+.ai-chat-box {
+    width: 60%;
+    position: relative;
+}
+
+.user-chat-area {
+    width: 90%;
+    background-color: black;
+    padding: 20px;
+    color: rgb(215, 221, 227);
+    border-radius: 40px 0 40px 40px;
+    box-shadow: 4px 4px 12px rgb(47, 46, 46);
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+#user-img {
+    position: absolute;
+    right: 0%;
+    filter: drop-shadow(4px 4px 12px rgb(47, 46, 46));
+}
+.choose_img{
+
+    width: 50%;
+    border-radius: 32px;
+}
+
+.ai-chat-area {
+    width: 90%;
+    background-color: rgb(66, 80, 76);
+    padding: 20px;
+    left: 12%;
+    position: relative;
+    border-radius: 0px 40px 40px 40px;
+    color: rgb(215, 221, 227);
+    box-shadow: 4px 4px 12px rgb(47, 46, 46);
+}
+
+#ai-img {
+    position: absolute;
+    left: 0%;
+    filter: drop-shadow(4px 4px 12px rgb(47, 46, 46));
+    
+}
+
+.prompt-area {
+    height: 20%;
+    background-color: rgb(27, 30, 36);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#prompt-input {
+    width: 60%;
+    height: 50%;
+    background-color: rgb(14, 20, 18);
+    color: rgb(215, 221, 227);
+    border: none;
+    outline: none;
+    border-radius: 110px;
+    padding: 10px;
+    box-shadow: 4px 4px 12px rgb(47, 46, 46);
+    font-size: 20px;
+}
+.prompt-area button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(14, 20, 18);
+    transition: all 0.5s;
+}
+.prompt-area button:hover{
+    background-color: rgba(14, 20, 18, 0.253);;
+}
+
+.load1{
+    filter: drop-shadow(4px 4px 12px rgb(47, 46, 46));
+}
+
+.chooseimg{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+#btn-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
